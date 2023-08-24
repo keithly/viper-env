@@ -1,6 +1,6 @@
-# Viper Env Z-Shel plugin
+# Viper Env Z-Shell plugin
 
-Automatically activates and deactivates python virtualenv upon cd in and out.
+Automatically activates and deactivates a Python virtualenv upon `cd` in and out.
 
 ## Inspiration
 
@@ -11,34 +11,11 @@ Based on [blueray](https://stackoverflow.com/users/1772898/blueray)'s [answer](h
 
 ![Alt text](./make_animation/assets/final.svg)
 
-## Example
-```zsh
-> viper-env help
+## Installation
 
-Description:
-  Automatically activates and deactivates python virtualenv upon cd in and out.
+### Oh My Zsh
 
-Dependencies:
-  - zsh
-  - python
-  - `brew install coreutils` (macOS only)
-
-Example usage:
-  # Create virtual environment
-  python -m venv .venv
-  # Save current dir
-  current_dir=$(basename $PWD)
-  # Exit current directory
-  cd ..
-  # Reenter it
-  cd $current_dir
-```
-
-## Instalation
-
-### Oh my Zsh
-
-Git clone this repository to the Oh my Zsh custom plugins folder.
+Git clone this repository to [the Oh My Zsh custom plugins folder](https://github.com/ohmyzsh/ohmyzsh#custom-plugins-and-themes).
 
 Add plugin to plugins directive in `~/.zshrc`
 ```zsh
